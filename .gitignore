@@ -1,0 +1,11 @@
+build
+node_modules
+
+# misc
+.DS_Store
+.env
+
+#truffle
+.tern-port
+yarn.lock
+package-lock.json
