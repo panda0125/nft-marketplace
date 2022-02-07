@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.11;
 
+import './ERC165.sol';
+import './interfaces/IERC721.sol';
+
 /**
 Building out the minting function:
 a. NFT to point to an Address
@@ -9,19 +12,7 @@ c. Keep track of token owner addresses to token ID
 d. Keep track of how many tokens an address has
 e. Create an event that emits a Transfer log: contract address, where it's minted to and IDs
  */
-contract ERC721 {
-
-    event Transfer(
-        address indexed from,
-        address indexed to,
-        uint256 indexed tokenId
-    );
-
-    event Approval(
-        address indexed owner,
-        address indexed approved,
-        uint256 indexed tokenId
-    );
+contract ERC721 is ERC165, IERC721 {
 
     // Mapping of token ID to owner address
     mapping(uint256 => address) private _tokenOwner;
@@ -31,6 +22,10 @@ contract ERC721 {
 
     // mapping from token ID to approved addresses
     mapping (uint256 => address) private _tokenApprovals;
+
+    constructor() {
+        registerInterface(bytes4(keccak256('balanceOf(bytes4)')^keccak256('ownerOf(bytes4)')^keccak256('transferFrom(bytes4)')^keccak256('approve(bytes4)')));
+    }
 
     /// @notice Count all NFTs assigned to an owner
     /// @dev NFTs assigned to the zero address are considered invalid, and this
@@ -50,7 +45,7 @@ contract ERC721 {
     ///  about them do throw.
     /// @param _tokenId The identifier for an NFT
     /// @return The address of the owner of the NFT
-    function ownerOf(uint256 _tokenId) public view returns (address) {
+    function ownerOf(uint256 _tokenId) public view override returns (address) {
         address owner = _tokenOwner[_tokenId];
         require(owner != address(0), 'Token ID not valid!');
         return owner;
@@ -100,7 +95,7 @@ contract ERC721 {
         emit Transfer(_from, _to, _tokenId);
     }
 
-    function transferFrom(address _from, address _to, uint256 _tokenId) public {
+    function transferFrom(address _from, address _to, uint256 _tokenId) public override {
         require(isApprovedOrOwner(msg.sender, _tokenId));
         _transferFrom(_from, _to, _tokenId);
     }
@@ -111,7 +106,7 @@ contract ERC721 {
     ///  operator of the current owner.
     /// @param _approved The new approved NFT controller
     /// @param _tokenId The NFT to approve
-    function approve(address _approved, uint256 _tokenId) public {
+    function approve(address _approved, uint256 _tokenId) public override {
         address owner = ownerOf(_tokenId);
         require(_approved != owner, 'Error - Token can not be sent to current owner');
         require(msg.sender == owner, 'Approval made from invalid address');
