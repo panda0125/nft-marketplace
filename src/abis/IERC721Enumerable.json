@@ -72,15 +72,15 @@
     "absolutePath": "project:/src/contracts/interfaces/IERC721Enumerable.sol",
     "exportedSymbols": {
       "IERC721Enumerable": [
-        781
+        835
       ]
     },
-    "id": 782,
+    "id": 836,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 756,
+        "id": 810,
         "literals": [
           "solidity",
           "^",
@@ -88,7 +88,7 @@
           ".11"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:24:8"
+        "src": "32:24:9"
       },
       {
         "abstract": false,
@@ -97,48 +97,48 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 781,
+        "id": 835,
         "linearizedBaseContracts": [
-          781
+          835
         ],
         "name": "IERC721Enumerable",
-        "nameLocation": "69:17:8",
+        "nameLocation": "69:17:9",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "documentation": {
-              "id": 757,
+              "id": 811,
               "nodeType": "StructuredDocumentation",
-              "src": "93:209:8",
+              "src": "93:209:9",
               "text": "@notice Count NFTs tracked by this contract\n @return A count of valid NFTs tracked by this contract, where each one of\n  them has an assigned and queryable owner not equal to the zero address"
             },
             "functionSelector": "18160ddd",
-            "id": 762,
+            "id": 816,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "totalSupply",
-            "nameLocation": "316:11:8",
+            "nameLocation": "316:11:9",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 758,
+              "id": 812,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "327:2:8"
+              "src": "327:2:9"
             },
             "returnParameters": {
-              "id": 761,
+              "id": 815,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 760,
+                  "id": 814,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 762,
-                  "src": "353:7:8",
+                  "scope": 816,
+                  "src": "353:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -146,10 +146,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 759,
+                    "id": 813,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "353:7:8",
+                    "src": "353:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -158,42 +158,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "352:9:8"
+              "src": "352:9:9"
             },
-            "scope": 781,
-            "src": "307:55:8",
+            "scope": 835,
+            "src": "307:55:9",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 763,
+              "id": 817,
               "nodeType": "StructuredDocumentation",
-              "src": "368:239:8",
+              "src": "368:239:9",
               "text": "@notice Enumerate valid NFTs\n @dev Throws if `_index` >= `totalSupply()`.\n @param _index A counter less than `totalSupply()`\n @return The token identifier for the `_index`th NFT,\n  (sort order not specified)"
             },
             "functionSelector": "4f6ccce7",
-            "id": 770,
+            "id": 824,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "tokenByIndex",
-            "nameLocation": "621:12:8",
+            "nameLocation": "621:12:9",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 766,
+              "id": 820,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 765,
+                  "id": 819,
                   "mutability": "mutable",
                   "name": "_index",
-                  "nameLocation": "642:6:8",
+                  "nameLocation": "642:6:9",
                   "nodeType": "VariableDeclaration",
-                  "scope": 770,
-                  "src": "634:14:8",
+                  "scope": 824,
+                  "src": "634:14:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -201,10 +201,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 764,
+                    "id": 818,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "634:7:8",
+                    "src": "634:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -213,21 +213,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "633:16:8"
+              "src": "633:16:9"
             },
             "returnParameters": {
-              "id": 769,
+              "id": 823,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 768,
+                  "id": 822,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 770,
-                  "src": "673:7:8",
+                  "scope": 824,
+                  "src": "673:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -235,10 +235,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 767,
+                    "id": 821,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "673:7:8",
+                    "src": "673:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -247,42 +247,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "672:9:8"
+              "src": "672:9:9"
             },
-            "scope": 781,
-            "src": "612:70:8",
+            "scope": 835,
+            "src": "612:70:9",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 771,
+              "id": 825,
               "nodeType": "StructuredDocumentation",
-              "src": "688:434:8",
+              "src": "688:434:9",
               "text": "@notice Enumerate NFTs assigned to an owner\n @dev Throws if `_index` >= `balanceOf(_owner)` or if\n  `_owner` is the zero address, representing invalid NFTs.\n @param _owner An address where we are interested in NFTs owned by them\n @param _index A counter less than `balanceOf(_owner)`\n @return The token identifier for the `_index`th NFT assigned to `_owner`,\n   (sort order not specified)"
             },
             "functionSelector": "2f745c59",
-            "id": 780,
+            "id": 834,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "tokenOfOwnerByIndex",
-            "nameLocation": "1136:19:8",
+            "nameLocation": "1136:19:9",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 776,
+              "id": 830,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 773,
+                  "id": 827,
                   "mutability": "mutable",
                   "name": "_owner",
-                  "nameLocation": "1164:6:8",
+                  "nameLocation": "1164:6:9",
                   "nodeType": "VariableDeclaration",
-                  "scope": 780,
-                  "src": "1156:14:8",
+                  "scope": 834,
+                  "src": "1156:14:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -290,10 +290,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 772,
+                    "id": 826,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1156:7:8",
+                    "src": "1156:7:9",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -304,13 +304,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 775,
+                  "id": 829,
                   "mutability": "mutable",
                   "name": "_index",
-                  "nameLocation": "1180:6:8",
+                  "nameLocation": "1180:6:9",
                   "nodeType": "VariableDeclaration",
-                  "scope": 780,
-                  "src": "1172:14:8",
+                  "scope": 834,
+                  "src": "1172:14:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -318,10 +318,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 774,
+                    "id": 828,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1172:7:8",
+                    "src": "1172:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -330,21 +330,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1155:32:8"
+              "src": "1155:32:9"
             },
             "returnParameters": {
-              "id": 779,
+              "id": 833,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 778,
+                  "id": 832,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 780,
-                  "src": "1211:7:8",
+                  "scope": 834,
+                  "src": "1211:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -352,10 +352,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 777,
+                    "id": 831,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1211:7:8",
+                    "src": "1211:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -364,35 +364,35 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1210:9:8"
+              "src": "1210:9:9"
             },
-            "scope": 781,
-            "src": "1127:93:8",
+            "scope": 835,
+            "src": "1127:93:9",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 782,
-        "src": "59:1163:8",
+        "scope": 836,
+        "src": "59:1163:9",
         "usedErrors": []
       }
     ],
-    "src": "32:1190:8"
+    "src": "32:1190:9"
   },
   "legacyAST": {
     "absolutePath": "project:/src/contracts/interfaces/IERC721Enumerable.sol",
     "exportedSymbols": {
       "IERC721Enumerable": [
-        781
+        835
       ]
     },
-    "id": 782,
+    "id": 836,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 756,
+        "id": 810,
         "literals": [
           "solidity",
           "^",
@@ -400,7 +400,7 @@
           ".11"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:24:8"
+        "src": "32:24:9"
       },
       {
         "abstract": false,
@@ -409,48 +409,48 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 781,
+        "id": 835,
         "linearizedBaseContracts": [
-          781
+          835
         ],
         "name": "IERC721Enumerable",
-        "nameLocation": "69:17:8",
+        "nameLocation": "69:17:9",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "documentation": {
-              "id": 757,
+              "id": 811,
               "nodeType": "StructuredDocumentation",
-              "src": "93:209:8",
+              "src": "93:209:9",
               "text": "@notice Count NFTs tracked by this contract\n @return A count of valid NFTs tracked by this contract, where each one of\n  them has an assigned and queryable owner not equal to the zero address"
             },
             "functionSelector": "18160ddd",
-            "id": 762,
+            "id": 816,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "totalSupply",
-            "nameLocation": "316:11:8",
+            "nameLocation": "316:11:9",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 758,
+              "id": 812,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "327:2:8"
+              "src": "327:2:9"
             },
             "returnParameters": {
-              "id": 761,
+              "id": 815,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 760,
+                  "id": 814,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 762,
-                  "src": "353:7:8",
+                  "scope": 816,
+                  "src": "353:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -458,10 +458,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 759,
+                    "id": 813,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "353:7:8",
+                    "src": "353:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -470,42 +470,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "352:9:8"
+              "src": "352:9:9"
             },
-            "scope": 781,
-            "src": "307:55:8",
+            "scope": 835,
+            "src": "307:55:9",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 763,
+              "id": 817,
               "nodeType": "StructuredDocumentation",
-              "src": "368:239:8",
+              "src": "368:239:9",
               "text": "@notice Enumerate valid NFTs\n @dev Throws if `_index` >= `totalSupply()`.\n @param _index A counter less than `totalSupply()`\n @return The token identifier for the `_index`th NFT,\n  (sort order not specified)"
             },
             "functionSelector": "4f6ccce7",
-            "id": 770,
+            "id": 824,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "tokenByIndex",
-            "nameLocation": "621:12:8",
+            "nameLocation": "621:12:9",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 766,
+              "id": 820,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 765,
+                  "id": 819,
                   "mutability": "mutable",
                   "name": "_index",
-                  "nameLocation": "642:6:8",
+                  "nameLocation": "642:6:9",
                   "nodeType": "VariableDeclaration",
-                  "scope": 770,
-                  "src": "634:14:8",
+                  "scope": 824,
+                  "src": "634:14:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -513,10 +513,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 764,
+                    "id": 818,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "634:7:8",
+                    "src": "634:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -525,21 +525,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "633:16:8"
+              "src": "633:16:9"
             },
             "returnParameters": {
-              "id": 769,
+              "id": 823,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 768,
+                  "id": 822,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 770,
-                  "src": "673:7:8",
+                  "scope": 824,
+                  "src": "673:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -547,10 +547,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 767,
+                    "id": 821,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "673:7:8",
+                    "src": "673:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -559,42 +559,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "672:9:8"
+              "src": "672:9:9"
             },
-            "scope": 781,
-            "src": "612:70:8",
+            "scope": 835,
+            "src": "612:70:9",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 771,
+              "id": 825,
               "nodeType": "StructuredDocumentation",
-              "src": "688:434:8",
+              "src": "688:434:9",
               "text": "@notice Enumerate NFTs assigned to an owner\n @dev Throws if `_index` >= `balanceOf(_owner)` or if\n  `_owner` is the zero address, representing invalid NFTs.\n @param _owner An address where we are interested in NFTs owned by them\n @param _index A counter less than `balanceOf(_owner)`\n @return The token identifier for the `_index`th NFT assigned to `_owner`,\n   (sort order not specified)"
             },
             "functionSelector": "2f745c59",
-            "id": 780,
+            "id": 834,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "tokenOfOwnerByIndex",
-            "nameLocation": "1136:19:8",
+            "nameLocation": "1136:19:9",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 776,
+              "id": 830,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 773,
+                  "id": 827,
                   "mutability": "mutable",
                   "name": "_owner",
-                  "nameLocation": "1164:6:8",
+                  "nameLocation": "1164:6:9",
                   "nodeType": "VariableDeclaration",
-                  "scope": 780,
-                  "src": "1156:14:8",
+                  "scope": 834,
+                  "src": "1156:14:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -602,10 +602,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 772,
+                    "id": 826,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1156:7:8",
+                    "src": "1156:7:9",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -616,13 +616,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 775,
+                  "id": 829,
                   "mutability": "mutable",
                   "name": "_index",
-                  "nameLocation": "1180:6:8",
+                  "nameLocation": "1180:6:9",
                   "nodeType": "VariableDeclaration",
-                  "scope": 780,
-                  "src": "1172:14:8",
+                  "scope": 834,
+                  "src": "1172:14:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -630,10 +630,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 774,
+                    "id": 828,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1172:7:8",
+                    "src": "1172:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -642,21 +642,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1155:32:8"
+              "src": "1155:32:9"
             },
             "returnParameters": {
-              "id": 779,
+              "id": 833,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 778,
+                  "id": 832,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 780,
-                  "src": "1211:7:8",
+                  "scope": 834,
+                  "src": "1211:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -664,10 +664,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 777,
+                    "id": 831,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1211:7:8",
+                    "src": "1211:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -676,21 +676,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1210:9:8"
+              "src": "1210:9:9"
             },
-            "scope": 781,
-            "src": "1127:93:8",
+            "scope": 835,
+            "src": "1127:93:9",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 782,
-        "src": "59:1163:8",
+        "scope": 836,
+        "src": "59:1163:9",
         "usedErrors": []
       }
     ],
-    "src": "32:1190:8"
+    "src": "32:1190:9"
   },
   "compiler": {
     "name": "solc",
@@ -698,7 +698,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-02-07T16:45:52.134Z",
+  "updatedAt": "2022-02-08T12:09:59.838Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
